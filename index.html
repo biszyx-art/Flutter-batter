@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Flutter Batter</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>Flutter Batter</h1>
+  <p>Premium Breakfast Delivery</p>
+</header>
+
+<div class="container">
+
+  <div class="card">
+    <img src="images/classic.jpg">
+    <div class="card-content">
+      <h3>Classic Platter - GHS 320</h3>
+      <button onclick="addToCart('Classic Platter',320)">Add to Cart</button>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="images/fusion.jpg">
+    <div class="card-content">
+      <h3>Fusion Platter - GHS 380</h3>
+      <button onclick="addToCart('Fusion Platter',380)">Add to Cart</button>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="images/pancake.jpg">
+    <div class="card-content">
+      <h3>Pancake Mix - GHS 85</h3>
+      <button onclick="addToCart('Pancake Mix',85)">Add to Cart</button>
+    </div>
+  </div>
+
+  <div class="cart-box">
+    <h2>Cart</h2>
+    <div id="cart"></div>
+    <h3>Total: GHS <span id="total">0</span></h3>
+
+    <input id="name" placeholder="Full Name">
+    <input id="phone" placeholder="Phone">
+    <input id="address" placeholder="Address">
+
+    <button onclick="placeOrder()">Place Order</button>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
